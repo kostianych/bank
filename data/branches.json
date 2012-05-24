@@ -1,0 +1,10 @@
+{
+    success: true,
+    branches: [
+        {id: 1, bank_id: 1, name: 'Alberton',    address: '45 Commisionner', manager: "Johann Kikimor"},
+        {id: 2, bank_id: 1, name: 'Bramfonstein', address: '5 Simmonds', manager: "Clementine Lvovitch "},
+        {id: 3, bank_id: 2, name: 'Capevidal',    address: '72 Fox', manager: "Mark Willis"},
+        {id: 4, bank_id: 2, name: 'Gauteng', address: '68 Grayston', manager: "Mandla Nkuna"}
+
+    ]
+}
