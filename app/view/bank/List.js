@@ -56,9 +56,35 @@ Ext.define('AM.view.bank.List' ,{
     },
     {
         xtype: 'branchlist'
-    }],
+    },
+    {
+        xtype: 'button',
+        text : 'Add',
+        action: 'add'
+    },
+    {
+        xtype: 'button',
+        text : 'Edit',
+        action: 'edit'
+    },
+    {
+        xtype: 'button',
+        text : 'Delete',
+        action: 'del'
+    }
 
 
-    renderTo: Ext.getBody()
+
+    ],
+
+    buttons:  [
+    {
+        text: 'Add',
+        action: 'add'
+    }
+    ]//,
+
+
+//    renderTo: Ext.getBody()
 
 });

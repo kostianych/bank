@@ -5,6 +5,6 @@ Ext.application({
     autoCreateViewport: true,
 
     controllers: [
-        'Banks'
+        'Banks', 'Branches'
     ]
 });

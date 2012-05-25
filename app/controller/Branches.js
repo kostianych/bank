@@ -1,4 +1,4 @@
-Ext.define('AM.controller.Users', {
+Ext.define('AM.controller.Branches', {
     extend: 'Ext.app.Controller',
 
     stores: ['Branches'],
@@ -19,8 +19,14 @@ Ext.define('AM.controller.Users', {
             'viewport > branchlist dataview': {
                 itemdblclick: this.editUser
             },
-            'useredit button[action=save]': {
+            'branchedit button[action=save]': {
                 click: this.updateUser
+            },
+
+            '*': {
+                openWindowEvent: function(args) {
+
+                }
             }
         });
     },

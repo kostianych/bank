@@ -1,10 +1,14 @@
 {
     success: true,
     branches: [
-        {id: 1, bank_id: 1, name: 'Alberton',    address: '45 Commisionner', manager: "Johann Kikimor"},
-        {id: 2, bank_id: 1, name: 'Bramfonstein', address: '5 Simmonds', manager: "Clementine Lvovitch "},
-        {id: 3, bank_id: 2, name: 'Capevidal',    address: '72 Fox', manager: "Mark Willis"},
-        {id: 4, bank_id: 2, name: 'Gauteng', address: '68 Grayston', manager: "Mandla Nkuna"}
+        {id: 1, bank_id: 1, name: 'Alberton', address: '45 Commisionner', manager: 'Johann Kikimor', open_date: '12/12/2002',
+            has_storage: true, deposit_currency: 'USD'},
+        {id: 2, bank_id: 1, name: 'Bramfonstein', address: '5 Simmonds', manager: 'Clementine Lvovitch', open_date: '11/11/2003',
+            has_storage: false, deposit_currency: 'EUR'},
+        {id: 3, bank_id: 2, name: 'Capevidal', address: '72 Fox', manager: 'Mark Willis', open_date: '10/10/2004',
+            has_storage: true, deposit_currency: 'RAND'},
+        {id: 4, bank_id: 2, name: 'Gauteng', address: '68 Grayston', manager: 'Mandla Nkuna', open_date: '09/09/2005',
+            has_storage: false, deposit_currency: 'RAND'}
 
     ]
 }

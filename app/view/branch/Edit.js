@@ -7,7 +7,7 @@ Ext.define('AM.view.branch.Edit', {
     title : 'Edit Branch',
     layout: 'fit',
     autoShow: true,
-    height: 180,
+    height: 260,
     width: 280,
 
     initComponent: function() {
@@ -21,7 +21,7 @@ Ext.define('AM.view.branch.Edit', {
                 items: [
                     {
                         xtype: 'textfield',
-                        name : 'name',
+                        name : x,
                         fieldLabel: 'Name'
                     },
                     {
@@ -33,6 +33,66 @@ Ext.define('AM.view.branch.Edit', {
                         xtype: 'textfield',
                         name : 'manager',
                         fieldLabel: 'Manager'
+                    },
+                    {
+                        xtype: 'datefield',
+                        fieldLabel: 'Open date',
+                        name: 'open_date',
+                        value: new Date()  // defaults to today
+                    },
+                    {
+                        xtype      : 'fieldcontainer',
+                        fieldLabel : 'Has storage',
+                        defaultType: 'radiofield',
+                        defaults: {
+                            flex: 1
+                        },
+                        layout: 'hbox',
+                        items: [
+                            {
+                                boxLabel  : 'Yes',
+                                name      : 'has_storage',
+                                inputValue: 'Yes',
+                                id        : 'radio1'
+                            }, {
+                                boxLabel  : 'No',
+                                name      : 'has_storage',
+                                inputValue: 'No',
+                                id        : 'radio2'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'fieldcontainer',
+                        fieldLabel: 'Deposit currency',
+                        defaultType: 'checkboxfield',
+                        layout: 'hbox',
+                        border: true,
+                        layoutConfig: {
+                            padding:'0',
+                            pack:'center',
+                            align:'middle'
+                        },
+                        items: [
+                            {
+                                boxLabel  : 'USD',
+                                name      : 'deposit_currency',
+                                inputValue: 'USD',
+                                id        : 'checkbox1'
+                            },
+                            {
+                                boxLabel  : 'EUR',
+                                name      : 'deposit_currency',
+                                inputValue: 'EUR',
+                                checked   : true,
+                                id        : 'checkbox2'
+                            }, {
+                                boxLabel  : 'RAND',
+                                name      : 'deposit_currency',
+                                inputValue: 'RAND',
+                                id        : 'checkbox3'
+                            }
+                        ]
                     }
 
                 ]
