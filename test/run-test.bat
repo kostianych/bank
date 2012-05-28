@@ -1,1 +1,1 @@
-java -classpath "t:/workspace/sandbox/mvc/lib/*" org.easyb.BehaviorRunner TestBank.story
+java -classpath "t:/workspace/sandbox/bank/lib/*" org.easyb.BehaviorRunner TestBank.story
